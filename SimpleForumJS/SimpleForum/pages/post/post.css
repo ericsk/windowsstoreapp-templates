@@ -1,0 +1,78 @@
+﻿.post section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+
+    display: -ms-grid;
+    -ms-grid-rows: 1fr;
+    -ms-grid-columns: 640px 1fr;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.post .post-content {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  font-size: 16pt;
+  height: 100%;
+  overflow-x: auto;
+}
+
+.post .post-comments {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  overflow-x: auto;
+  height: 100%;
+  z-index: 0;
+
+}
+
+  .post .post-comments .win-container {
+    margin-bottom: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 7px;
+  }
+
+  .post .post-comments .item {
+    -ms-grid-columns: 110px 1fr;
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+    height: 110px;
+    width: 470px;
+  }
+
+    .post .post-comments .item .item-info {
+      -ms-grid-column: 2;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+      .post .post-comments .item .item-info .item-title {
+        margin-top: 4px;
+        max-height: 80px;
+        font-size: 12pt;
+        overflow: hidden;
+      }
+
+      .post .post-comments .item .item-info .item-subtitle {
+        opacity: 0.6;
+      }
+
+      .post .post-comments .item .item-info .item-description {
+        max-height: 30px;
+        overflow: hidden;
+      }
+
+@media screen and (-ms-view-state: snapped) {
+    .post section[role=main] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .post section[role=main] {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
